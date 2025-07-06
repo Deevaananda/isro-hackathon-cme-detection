@@ -1,0 +1,7 @@
+ISRO HACKATHON PS10 - STEP 2: EXPLORATORY DATA ANALYSIS SUMMARY\n================================================================================\n\nAnalysis Date: 2025-07-06 17:53:40\n\nDATA COVERAGE SUMMARY:\n----------------------------------------\nTime span: 2024-08-01 00:00:52.619000 to 2025-06-30 23:58:50.052000\nTotal duration: 333 days\nTotal data points: 1,890,832\nData completeness: 98.6%\n\nCME EVENT SUMMARY:\n----------------------------------------\nTotal CME events: 15\nCME periods (precise): 83,605 points (4.42%)
+CME periods (extended): 334,982 points (17.72%)
+
+PARAMETER SUMMARY:\n----------------------------------------\n         Parameter   Mean   Std    Min    Max CME_Mean Enhancement
+    Proton Density   4.27  2.53   0.72  16.29     3.72       0.87x
+   Proton Velocity 435.38 82.89 297.36 742.80   470.30       1.08x
+Proton Temperature  57.92 20.74  23.09 129.95    64.27       1.12x\n\nKEY OBSERVATIONS:\n----------------------------------------\n• Proton Density shows minimal change during CME events\n• Proton Velocity shows minimal change during CME events\n• Proton Temperature shows minimal change during CME events\n

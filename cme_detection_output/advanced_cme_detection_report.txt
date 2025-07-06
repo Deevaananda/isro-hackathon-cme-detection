@@ -1,0 +1,53 @@
+
+ISRO HACKATHON PS10 - ADVANCED CME DETECTION SYSTEM REPORT
+=============================================================
+
+Analysis Period: 2024-08-01 00:00:52.619000 to 2025-06-30 23:58:50.052000
+Total Data Points: 1,890,832
+Analysis Duration: 333 days
+
+DETECTION SUMMARY:
+-----------------
+Detected CME Points: 94,542 (5.00%)
+Detection Threshold: 0.617
+
+DETECTED EVENT CHARACTERISTICS:
+------------------------------
+Average Velocity: 569.6 km/s
+Average Density: 7.4 #/cm³  
+Average Temperature: 93.2 km/s
+
+MODEL PERFORMANCE:
+-----------------
+Random Forest AUC: 0.996
+Logistic Regression AUC: 0.728
+
+TOP 10 MOST IMPORTANT FEATURES:
+------------------------------
+ 1. spacecraft_y                   0.1968\n 2. spacecraft_x                   0.1393\n 3. spacecraft_z                   0.1332\n 4. proton_velocity_ma_24h         0.0590\n 5. proton_velocity_ma_6h          0.0407\n 6. velocity_enhancement           0.0403\n 7. proton_temperature_ma_24h      0.0392\n 8. proton_velocity                0.0372\n 9. proton_xvelocity               0.0310\n10. proton_velocity_ma_1h          0.0253\n
+THRESHOLDS:
+----------
+Optimal (Youden's J): 0.525
+High Sensitivity: 0.590
+High Specificity: 0.448
+Composite Score: 0.617
+
+SCIENTIFIC METHODS APPLIED:
+--------------------------
+1. Pearson Correlation Analysis (linear relationships)
+2. Spearman Correlation Analysis (monotonic relationships)  
+3. Mutual Information (non-linear dependencies)
+4. Physics-based Feature Engineering
+5. Temporal Analysis with Granger Causality Proxies
+6. Random Forest Feature Importance
+7. Composite Scoring Algorithm
+8. Cross-validation with External Catalogues
+
+RECOMMENDATIONS:
+---------------
+1. Use composite score > 0.617 for operational detection
+2. Monitor top features: spacecraft_y, spacecraft_x, spacecraft_z
+3. Cross-reference with Richardson-Cane catalogue for validation
+4. Consider ensemble approach for critical applications
+
+Generated: 2025-07-06 19:19:50

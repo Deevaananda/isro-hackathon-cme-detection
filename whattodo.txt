@@ -1,0 +1,29 @@
+Identifying Halo CME Events Based on Particle Data from SWIS-ASPEX Payload onboard Aditya-L1
+Our Sun drives the particle flux in the interplanetary medium and also affects our near earth environment. A sudden change in these particle flux can result in significant disturbance in the upper atmosphere and can result in major loss to the space assets. An early warning system based on particle measurement carried out at location much farther away, before these particles reach earth, can help us to take precautionary measures to prevent any catastrophic destruction.
+
+Objective:
+To use the data from Solar Wind Ion Spectrometer (SWIS) instrument of ASPEX payload onboard Aditya-L1 mission to identify transient events such as halo Coronal Mass Ejection (CME) from the Sun.
+To analyze SWIS Level-2 data (particle flux, number density, temperature, velocity) to characterize CME signatures.
+To develop methods to process time-series of SWIS parameters and derive suitable thresholds for detecting halo CME events.
+Expected Outcomes:
+Identification of threshold(s) or derived parameter(s) from SWIS data time-series that are indicative of halo CME events.
+Improved understanding of transient solar wind signatures at L1 location.
+Dataset Required:
+SWIS Level-2 data (flux, number density, temperature, speed) from Aug 2024 onward, available at ISSDC.
+Halo CME event timestamps and properties from CACTUS CME database.
+Suggested Tools/Technologies:
+Programming Languages: Python or C
+Libraries: CDF libraries (from NASA SPDF)
+Visualization: Matplotlib, Plotly
+Signal Processing: Pandas, SciPy, NumPy
+Expected Solution / Steps to be followed to achieve the objectives:
+Identify halo CME timestamps using CACTUS CME database.
+Extract corresponding SWIS Level-2 data for identified CME windows.
+Analyze flux, density, temperature, and speed parameters during these windows.
+Derive new time-series features (e.g., moving averages, gradients, combined metrics).
+Determine statistical thresholds on derived parameters that signal CME presence.
+Validate thresholds against confirmed CME occurrences for accuracy and robustness.
+Evaluation Parameters:
+Correct identification of key signature patterns corresponding to CME events.
+Effectiveness of derived parameters and thresholds in distinguishing transient events.
+Accuracy and reliability of detection methodology using time-series data.
