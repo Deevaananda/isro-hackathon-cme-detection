@@ -19,17 +19,17 @@ Average Temperature: 93.2 km/s
 
 MODEL PERFORMANCE:
 -----------------
-Random Forest AUC: 0.996
-Logistic Regression AUC: 0.728
+Random Forest AUC: 0.995
+Logistic Regression AUC: 0.725
 
 TOP 10 MOST IMPORTANT FEATURES:
 ------------------------------
- 1. spacecraft_y                   0.1968\n 2. spacecraft_x                   0.1393\n 3. spacecraft_z                   0.1332\n 4. proton_velocity_ma_24h         0.0590\n 5. proton_velocity_ma_6h          0.0407\n 6. velocity_enhancement           0.0403\n 7. proton_temperature_ma_24h      0.0392\n 8. proton_velocity                0.0372\n 9. proton_xvelocity               0.0310\n10. proton_velocity_ma_1h          0.0253\n
+ 1. spacecraft_y                   0.1711\n 2. spacecraft_x                   0.1570\n 3. spacecraft_z                   0.1291\n 4. proton_velocity_ma_24h         0.0605\n 5. proton_temperature_ma_24h      0.0459\n 6. proton_velocity                0.0377\n 7. proton_xvelocity               0.0373\n 8. proton_velocity_ma_6h          0.0348\n 9. velocity_enhancement           0.0345\n10. proton_velocity_ma_1h          0.0329\n
 THRESHOLDS:
 ----------
-Optimal (Youden's J): 0.525
-High Sensitivity: 0.590
-High Specificity: 0.448
+Optimal (Youden's J): 0.524
+High Sensitivity: 0.572
+High Specificity: 0.495
 Composite Score: 0.617
 
 SCIENTIFIC METHODS APPLIED:
@@ -50,4 +50,4 @@ RECOMMENDATIONS:
 3. Cross-reference with Richardson-Cane catalogue for validation
 4. Consider ensemble approach for critical applications
 
-Generated: 2025-07-06 19:19:50
+Generated: 2025-07-07 13:34:40

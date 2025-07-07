@@ -30,16 +30,18 @@ A sophisticated machine learning system for detecting Coronal Mass Ejection (CME
 
 ```
 ├── step1_data_preparation.py           # Data loading and integration
-├── step2_exploratory_analysis.py       # Statistical analysis and visualization
+├── step2_exploratory_analysis.py       # Statistical analysis and visualization  
 ├── step3_feature_engineering.py        # Advanced feature creation
-├── advanced_cme_detection_system.py    # Main detection system
-├── enhanced_cme_detection_with_propagation.py  # Propagation modeling
-├── propagation_aware_cme_detection.py  # Simplified operational version
-├── cactuscmeevents.txt                 # CACTUS CME catalogue
-├── richardsoncanehalo.txt              # Richardson-Cane ICME catalogue
+├── advanced_cme_detection_system.py    # Main detection system with propagation
+├── requirements.txt                     # Python dependencies
+├── README.md                           # This documentation
+├── mod.txt                             # Comprehensive system summary
+├── whattodo.txt                        # Original project requirements
 ├── sceintifcmodelstomake.txt          # Scientific model specifications
 ├── cme_detection_output/               # Generated results and reports
-└── steps/ and swis/                    # Raw SWIS-ASPEX data files
+├── steps/                              # Raw SWIS-ASPEX STEPS data (2,312 files)
+├── swis/                               # Raw SWIS-ASPEX SWIS data (2,404 files)
+└── reseachfindingspaperss/             # Research papers and documentation
 ```
 
 ## 🛠️ Installation & Setup
@@ -50,9 +52,8 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn
 ```
 
 ### Data Requirements
-- SWIS-ASPEX Level 2 CDF files (steps/ and swis/ directories)
-- CACTUS CME catalogue (cactuscmeevents.txt)
-- Richardson-Cane ICME catalogue (richardsoncanehalo.txt)
+- SWIS-ASPEX Level 2 CDF files (included in steps/ and swis/ directories)
+- Note: Catalogue files for CACTUS and Richardson-Cane databases need to be obtained separately from their respective sources
 
 ## 🚀 Quick Start
 
@@ -71,21 +72,17 @@ python step2_exploratory_analysis.py
 python step3_feature_engineering.py
 ```
 
-### 4. Advanced CME Detection
+### 4. Complete CME Detection with Propagation
 ```bash
 python advanced_cme_detection_system.py
 ```
 
-### 5. Propagation-Aware Detection
-```bash
-python enhanced_cme_detection_with_propagation.py
-```
-
 ## 📈 Results & Outputs
 
-### Generated Files
-- `cme_detection_results.csv` - Complete detection dataset with probabilities
-- `ml_feature_importance.csv` - Ranked feature importance
+### Generated Reports
+- `advanced_cme_detection_report.txt` - Complete system analysis and results
+- `propagation_comprehensive_report.txt` - Propagation modeling methodology
+- `time_difference_propagation_methodology.txt` - Time-difference solution details
 - `detection_thresholds.csv` - Optimized operational thresholds
 - `advanced_cme_detection_report.txt` - Comprehensive analysis report
 - `time_difference_propagation_methodology.txt` - Technical methodology
