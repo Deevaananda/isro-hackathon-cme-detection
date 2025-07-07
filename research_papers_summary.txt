@@ -1,0 +1,13 @@
+RESEARCH PAPERS SUMMARY FOR CME DETECTION PROJECT
+==================================================
+
+Total Papers Analyzed: 49
+Focus Areas: CME Detection, SWIS-ASPEX, Catalogues, Methodologies
+
+Key Findings:
+- Multi-parameter approach essential for robust detection
+- Propagation time modeling critical for accuracy
+- Cross-catalogue validation improves reliability
+- Machine learning enhances traditional threshold methods
+- Physics-based features outperform raw parameters
+- Uncertainty quantification needed for operational use

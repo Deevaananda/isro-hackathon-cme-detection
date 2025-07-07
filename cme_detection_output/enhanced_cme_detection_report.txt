@@ -1,0 +1,57 @@
+
+ENHANCED CME DETECTION SYSTEM ANALYSIS REPORT
+==============================================
+Generated: 2025-07-07 15:01:57
+
+INSTRUMENT OPTIMIZATION:
+- SWIS-ASPEX: Ion composition and dynamics analysis
+- STEPS-ASPEX: High-cadence bulk plasma parameters
+- L1 Environment: Space weather context integration
+
+DATASET SUMMARY:
+- Total data points: 82,962
+- Time coverage: 329 days
+- Enhanced features: 12
+
+ENHANCED FEATURES IMPLEMENTED:
+✓ Ion composition proxies (temperature depression, charge states)
+✓ Bulk plasma fluctuation analysis (high-cadence variations)
+✓ L1 environment signatures (solar wind streams, shocks)
+✓ Halo CME signatures (flux rope rotation, bidirectional flows)
+✓ Geoeffectiveness indicators (space weather impact potential)
+
+DETECTION PERFORMANCE:
+
+Enhanced_RandomForest:
+  - AUC Score: 1.0000
+  - Accuracy: 0.9996
+Gradient_Boosting:
+  - AUC Score: 1.0000
+  - Accuracy: 0.9998
+Enhanced_Logistic:
+  - AUC Score: 0.9954
+  - Accuracy: 0.9633
+
+DETECTION STATISTICS:
+- High probability events (>95%): 1,121
+- Detection rate: 1.35%
+
+INSTRUMENT-SPECIFIC INSIGHTS:
+• SWIS ion composition analysis reveals CME material signatures
+• STEPS high-cadence data captures rapid plasma variations  
+• L1 position optimal for halo CME interception
+• Enhanced geoeffectiveness prediction capability
+
+OPERATIONAL RECOMMENDATIONS:
+• Implement real-time processing for space weather alerts
+• Use ensemble model predictions for robust detection
+• Apply instrument-specific quality filters
+• Monitor geoeffectiveness indicators for impact assessment
+
+VALIDATION APPROACH:
+• Cross-instrument parameter correlation
+• Multi-scale temporal analysis
+• Physics-based feature validation
+• Statistical anomaly detection
+
+SYSTEM STATUS: ENHANCED AND OPTIMIZED FOR ADITYA-L1 PAYLOADS
