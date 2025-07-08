@@ -13,6 +13,7 @@ ENHANCEMENTS BASED ON RESEARCH ANALYSIS:
 """
 
 import os
+import sys
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -32,6 +33,14 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.cluster import DBSCAN
 import warnings
 warnings.filterwarnings('ignore')
+
+# Import hello functionality
+try:
+    from hello import say_hello
+except ImportError:
+    def say_hello(name=None):
+        """Fallback hello function if hello.py is not available"""
+        return "Hello! Welcome to the Enhanced ISRO CME Detection System."
 
 # Configuration
 OUTPUT_DIR = "cme_detection_output"
@@ -569,6 +578,12 @@ SYSTEM STATUS: ENHANCED AND OPTIMIZED FOR ADITYA-L1 PAYLOADS
 
 def main():
     """Main function for enhanced CME detection system"""
+    # Check for hello command
+    if len(sys.argv) > 1 and sys.argv[1].lower() == "hello":
+        name = sys.argv[2] if len(sys.argv) > 2 else None
+        print(say_hello(name))
+        return
+    
     print("🚀 Starting Enhanced CME Detection System...")
     
     # Initialize enhanced system
