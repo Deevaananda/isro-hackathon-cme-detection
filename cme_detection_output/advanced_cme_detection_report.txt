@@ -20,16 +20,16 @@ Average Temperature: 93.2 km/s
 MODEL PERFORMANCE:
 -----------------
 Random Forest AUC: 0.995
-Logistic Regression AUC: 0.725
+Logistic Regression AUC: 0.728
 
 TOP 10 MOST IMPORTANT FEATURES:
 ------------------------------
- 1. spacecraft_y                   0.1711\n 2. spacecraft_x                   0.1570\n 3. spacecraft_z                   0.1291\n 4. proton_velocity_ma_24h         0.0605\n 5. proton_temperature_ma_24h      0.0459\n 6. proton_velocity                0.0377\n 7. proton_xvelocity               0.0373\n 8. proton_velocity_ma_6h          0.0348\n 9. velocity_enhancement           0.0345\n10. proton_velocity_ma_1h          0.0329\n
+ 1. spacecraft_y                   0.1735\n 2. spacecraft_z                   0.1492\n 3. spacecraft_x                   0.1445\n 4. proton_velocity_ma_24h         0.0584\n 5. proton_velocity_ma_1h          0.0482\n 6. proton_temperature_ma_24h      0.0387\n 7. proton_xvelocity               0.0364\n 8. velocity_enhancement           0.0316\n 9. proton_velocity_ma_6h          0.0314\n10. proton_velocity                0.0299\n
 THRESHOLDS:
 ----------
-Optimal (Youden's J): 0.524
-High Sensitivity: 0.572
-High Specificity: 0.495
+Optimal (Youden's J): 0.537
+High Sensitivity: 0.616
+High Specificity: 0.457
 Composite Score: 0.617
 
 SCIENTIFIC METHODS APPLIED:
@@ -46,8 +46,8 @@ SCIENTIFIC METHODS APPLIED:
 RECOMMENDATIONS:
 ---------------
 1. Use composite score > 0.617 for operational detection
-2. Monitor top features: spacecraft_y, spacecraft_x, spacecraft_z
+2. Monitor top features: spacecraft_y, spacecraft_z, spacecraft_x
 3. Cross-reference with Richardson-Cane catalogue for validation
 4. Consider ensemble approach for critical applications
 
-Generated: 2025-07-07 13:34:40
+Generated: 2025-07-08 23:02:36
