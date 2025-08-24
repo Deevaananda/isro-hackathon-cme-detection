@@ -57,6 +57,17 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn
 
 ## 🚀 Quick Start
 
+### System Greeting
+```bash
+# Test system functionality with a simple greeting
+python hello.py
+python hello.py "Your Name"
+
+# Or use hello command with main scripts
+python advanced_cme_detection_system.py hello
+python enhanced_swis_aspex_cme_detection.py hello "Space Weather Team"
+```
+
 ### 1. Data Preparation
 ```bash
 python step1_data_preparation.py
