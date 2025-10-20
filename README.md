@@ -93,7 +93,7 @@ python advanced_cme_detection_system.py
 - `detection_results.png` - Time series of detections
 - `propagation_analysis_comprehensive.png` - Propagation modeling analysis
 
-## 🔬 Scientific Innovation
+##  Scientific Innovation
 
 ### Propagation Time Modeling
 The system addresses the fundamental challenge in space weather prediction: correlating CME detection at the Sun with arrival measurements at L1.
