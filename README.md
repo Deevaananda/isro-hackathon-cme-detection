@@ -1,32 +1,32 @@
 # ISRO Hackathon PS10 - Halo CME Detection System
 
-## 🎯 Advanced CME Detection with Solar-L1 Propagation Modeling
+##  Advanced CME Detection with Solar-L1 Propagation Modeling
 
 A sophisticated machine learning system for detecting Coronal Mass Ejection (CME) events using ADITYA-L1 SWIS-ASPEX data, featuring propagation time modeling to bridge the critical 1-5 day gap between solar observations and L1 measurements.
 
 ![CME Detection System](cme_detection_output/detection_results.png)
 
-## 🚀 Key Features
+##  Key Features
 
-### 🔬 **Scientific Methodology**
+###  **Scientific Methodology**
 - **Multi-Algorithm Approach**: Pearson/Spearman correlations, Mutual Information, Granger Causality proxies
 - **Physics-Based Features**: Dynamic pressure, kinetic energy, enhancement factors
 - **Temporal Analysis**: Moving averages, gradients, Z-scores, percentile rankings
 - **Machine Learning**: Random Forest, Logistic Regression, Isolation Forest
 
-### 🕐 **Time-Difference Solution**
+###  **Time-Difference Solution**
 - **Critical Problem Solved**: 1-5 day time gap between CME detection at Sun and arrival at L1
 - **Propagation Modeling**: Velocity-dependent transit time calculations
 - **Physics Corrections**: Deceleration/acceleration effects based on CME speed
 - **Operational Forecasting**: ±12 hour uncertainty windows for real-time alerts
 
-### 📊 **Performance Metrics**
+###  **Performance Metrics**
 - **Random Forest AUC**: 0.996 (Near-perfect detection)
 - **Detection Accuracy**: 96.6%
 - **Data Points Analyzed**: 1,890,832 (333 days)
 - **CME Events Detected**: 94,542 (5.00% of data)
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── step1_data_preparation.py           # Data loading and integration
@@ -44,7 +44,7 @@ A sophisticated machine learning system for detecting Coronal Mass Ejection (CME
 └── reseachfindingspaperss/             # Research papers and documentation
 ```
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 ```bash
@@ -55,7 +55,7 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn
 - SWIS-ASPEX Level 2 CDF files (included in steps/ and swis/ directories)
 - Note: Catalogue files for CACTUS and Richardson-Cane databases need to be obtained separately from their respective sources
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Data Preparation
 ```bash
@@ -77,7 +77,7 @@ python step3_feature_engineering.py
 python advanced_cme_detection_system.py
 ```
 
-## 📈 Results & Outputs
+## Results & Outputs
 
 ### Generated Reports
 - `advanced_cme_detection_report.txt` - Complete system analysis and results
@@ -119,7 +119,7 @@ def calculate_propagation_time(velocity_km_s):
     return basic_time * correction
 ```
 
-## 🎯 Operational Applications
+##  Operational Applications
 
 ### Space Weather Forecasting
 - **1-5 day advance warning** for CME arrivals
@@ -135,7 +135,7 @@ def calculate_propagation_time(velocity_km_s):
 4. Validate arrival with SWIS-ASPEX measurements
 5. Update model parameters based on performance
 
-## 📊 Model Performance
+##  Model Performance
 
 ### Top Predictive Features
 1. **Spacecraft Position** (X, Y, Z coordinates)
@@ -150,7 +150,7 @@ def calculate_propagation_time(velocity_km_s):
 - **High Specificity**: 0.448 (low false positives)
 - **Composite Score**: 95th percentile threshold
 
-## 🏆 Technical Achievements
+##  Technical Achievements
 
 ### Unique Contributions
 1. **First Implementation** of SWIS-ASPEX data for CME detection
@@ -164,7 +164,7 @@ def calculate_propagation_time(velocity_km_s):
 - Physics-based model validation
 - Ensemble prediction approaches
 
-## 📖 Documentation
+## Documentation
 
 ### Complete Technical Documentation
 - [Time-Difference Propagation Methodology](cme_detection_output/time_difference_propagation_methodology.txt)
@@ -172,7 +172,7 @@ def calculate_propagation_time(velocity_km_s):
 - [Propagation Analysis Report](cme_detection_output/propagation_comprehensive_report.txt)
 - [Complete System Summary](mod.txt)
 
-## 🤝 Contributing
+##  Contributing
 
 This project was developed for the ISRO Hackathon PS10 challenge. For contributions or questions:
 
@@ -180,25 +180,10 @@ This project was developed for the ISRO Hackathon PS10 challenge. For contributi
 2. Create a feature branch
 3. Submit a pull request with detailed description
 
-## 📄 License
 
-This project is developed for the ISRO Hackathon PS10 - Space Weather Prediction challenge.
 
-## 🙏 Acknowledgments
 
-- **ISRO** for providing the challenge and ADITYA-L1 mission data
-- **CACTUS Team** for CME catalogue data
-- **Richardson & Cane** for ICME catalogue
-- **Python Scientific Community** for excellent libraries
 
-## 📞 Contact
 
-For technical questions or collaboration opportunities, please open an issue in this repository.
 
----
 
-**🌟 Status: Production Ready ✅**  
-**🚀 Mission: Complete Success!**  
-**⚡ Operational: Space Weather Forecasting Enabled**
-
-![ISRO Logo](https://www.isro.gov.in/themes/custom/isro/logo.png)
