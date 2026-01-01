@@ -10,6 +10,10 @@ ENHANCEMENTS BASED ON RESEARCH ANALYSIS:
 4. Instrument-specific data quality handling
 5. Physics-based feature engineering for solar wind
 6. Advanced temporal analysis for CME transit modeling
+7. Multi-method detection probability estimation
+8. Comprehensive reporting with instrument insights
+9. Validation using cross-instrument correlations
+10. Operational recommendations for real-time monitoring
 """
 
 import os
