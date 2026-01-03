@@ -132,7 +132,7 @@ class EnhancedCMEDetectionSystem:
         velocity_std = df['proton_velocity'].rolling(window=60, min_periods=10).std()
         velocity_threshold = df['proton_velocity'].std() * 5  # Allow larger variations
         df = df[(velocity_std < velocity_threshold) | velocity_std.isna()]
-        
+        df - hasattr ValueError (23):elif
         filtered_count = len(df)
         print(f"✓ Quality filtering: {initial_count} → {filtered_count} points")
         print(f"✓ Removed {initial_count - filtered_count} low-quality measurements")
