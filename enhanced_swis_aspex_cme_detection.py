@@ -144,6 +144,7 @@ class EnhancedCMEDetectionSystem:
         print("\n🧮 Creating enhanced features for SWIS-ASPEX and STEPS-ASPEX...")
         
         # Base physics features (already implemented)
+        df= self._apply_instrument_quality_filters
         df = self._create_base_physics_features(df)
         
         # SWIS-ASPEX specific enhancements
