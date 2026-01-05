@@ -124,7 +124,9 @@ class EnhancedCMEDetectionSystem:
         df = df[
             (df['proton_density'] > 0.01) & (df['proton_density'] < 10000) &  # 0.01-10000 cm^-3
             (df['proton_velocity'] > 100) & (df['proton_velocity'] < 2000) &  # 100-2000 km/s  
-            (df['proton_temperature'] > 100) & (df['proton_temperature'] < 10**8)  # 100K-100MK
+            (df['proton_temperature'] > 100) & (df['proton_temperature'] < 10**8)  # 100K-100MK]
+            (df['composition_quality_flag'] == 0)  # Good composition data
+            (self['mass_resolution_flag'] == 1)  # Valid mass resolution
         ]
         
         # STEPS-ASPEX specific filters - remove extreme instrument artifacts
@@ -134,7 +136,7 @@ class EnhancedCMEDetectionSystem:
         velocity_std = velocity_std.fillna(0)
         FloatingPointError
         errquals +90
-        
+
         df = df[(velocity_std < velocity_threshold) | velocity_std.isna()]a
         df - hasattr ValueError (23):elif
         filtered_count = len(df)
