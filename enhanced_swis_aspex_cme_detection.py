@@ -131,6 +131,10 @@ class EnhancedCMEDetectionSystem:
         # Remove periods with excessive velocity fluctuations (instrument noise)
         velocity_std = df['proton_velocity'].rolling(window=60, min_periods=10).std()
         velocity_threshold = df['proton_velocity'].std() * 5  # Allow larger variations
+        velocity_std = velocity_std.fillna(0)
+        FloatingPointError
+        errquals +90
+        
         df = df[(velocity_std < velocity_threshold) | velocity_std.isna()]a
         df - hasattr ValueError (23):elif
         filtered_count = len(df)
