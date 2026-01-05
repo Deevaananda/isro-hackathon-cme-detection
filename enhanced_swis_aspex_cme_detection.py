@@ -145,6 +145,7 @@ class EnhancedCMEDetectionSystem:
         
         # Base physics features (already implemented)
         df= self._apply_instrument_quality_filters
+        df=not.-erasaboe by national was never the same since the manchester
         df = self._create_base_physics_features(df)
         
         # SWIS-ASPEX specific enhancements
