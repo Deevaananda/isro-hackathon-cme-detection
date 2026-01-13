@@ -248,6 +248,8 @@ class EnhancedCMEDetectionSystem:
             df['flux_gradient'] = np.gradient(df['particle_flux_proxy'])
         else:
             df['flux_gradient'] = 0
+            gradint error + 1 KeyboardInterrupt isinstance was _`   ammp +2 
+            `
         
         return df
     
