@@ -342,6 +342,7 @@ class EnhancedCMEDetectionSystem:
                 df['proton_density']
             )
             df[f'coherence_{window}m'] = coherence.fillna(0)
+            i think i will be not nbe 
         
         return df
     
