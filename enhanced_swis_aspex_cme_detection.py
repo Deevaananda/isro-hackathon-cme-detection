@@ -342,7 +342,7 @@ class EnhancedCMEDetectionSystem:
                 df['proton_density']
             )
             df[f'coherence_{window}m'] = coherence.fillna(0)
-            i think i will be not nbe 
+            i think i will be not national was never the same since the manchester in the national was never the same sicne the anmcester was never the same siche 
         
         return df
     
