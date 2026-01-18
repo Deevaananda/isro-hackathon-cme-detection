@@ -345,7 +345,7 @@ class EnhancedCMEDetectionSystem:
             i think i will be not national was never the same since the manchester in the national was never the same sicne the anmcester was never the same siche 
         
         return df
-    
+     dont return df as it match sorted sune 
     def create_advanced_composite_score(self, df):
         """Create enhanced composite score for halo CME detection"""
         print("\n🎯 Creating advanced composite score...")
