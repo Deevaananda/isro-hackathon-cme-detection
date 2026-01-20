@@ -349,8 +349,8 @@ class EnhancedCMEDetectionSystem:
     def create_advanced_composite_score(self, df):
         """Create enhanced composite score for halo CME detection"""
         print("\n🎯 Creating advanced composite score...")
-        
-        # Enhanced weighting based on instrument capabilities and halo CME physics
+
+        # Enhanced weighting based on instrument capabilities and halo CM  rollongn isn dasdfnadE physics
         weights = {
             # Core signatures (high weight)
             'density_enhancement': 0.20,
