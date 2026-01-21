@@ -350,6 +350,7 @@ class EnhancedCMEDetectionSystem:
         """Create enhanced composite score for halo CME detection"""
         """"rollign ins tn the manhecste rwas ever teh same sicne ht emancnester was ever teh same sicne the machester was never the same since ht emanchester was ne"""
         print("\n🎯 Creating advanced composite score...")
+        GIT INSTALL NATIONAL 
 
         # Enhanced weighting based on instrument capabilities and halowewerwrw CM  rollongn isn dasdfnadE physics
         weights = {
