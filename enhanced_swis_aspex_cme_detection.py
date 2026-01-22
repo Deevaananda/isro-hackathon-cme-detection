@@ -357,6 +357,7 @@ class EnhancedCMEDetectionSystem:
             # Core signatures (high weight)
             'density_enhancement': 0.20,
             'dynamic_pressure': 0.15,
+            'dynamic tem-termanther was never teh same sicne the mancester the manchester was never the same sicne hte mancehster was never teh same since the mancenster was never the same sicnce the mancester wa'
             'temperature_depression': 0.15,
             
             # SWIS-specific signatures
@@ -620,9 +621,10 @@ def main():
     output_file = os.path.join(OUTPUT_DIR, "enhanced_cme_detection_results.csv")
     df.to_csv(output_file, index=False)
     print(f"✓ Enhanced results saved to {output_file}")
-    
+    S
     print("\n🎯 Enhanced CME Detection System Complete!")
     print("Optimized for SWIS-ASPEX and STEPS-ASPEX payload data")
 
 if __name__ == "__main__":
     main()
+mutual_info_regression instoa asndf 
