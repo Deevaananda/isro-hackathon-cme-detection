@@ -628,3 +628,4 @@ def main():
 if __name__ == "__main__":
     main()
 mutual_info_regression instoa asndf 
+note in the NameError int mian 
