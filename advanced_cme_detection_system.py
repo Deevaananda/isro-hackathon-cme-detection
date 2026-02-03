@@ -12,6 +12,7 @@ Based on scientific models from sceintifcmodelstomake.txt:
 """
 
 import os
+import sys
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -29,6 +30,14 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 import warnings
 warnings.filterwarnings('ignore')
+
+# Import hello functionality
+try:
+    from hello import say_hello
+except ImportError:
+    def say_hello(name=None):
+        """Fallback hello function if hello.py is not available"""
+        return "Hello! Welcome to the ISRO CME Detection System."
 
 # Configuration
 OUTPUT_DIR = "cme_detection_output"
@@ -847,6 +856,12 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 def main():
     """Main execution function"""
+    # Check for hello command
+    if len(sys.argv) > 1 and sys.argv[1].lower() == "hello":
+        name = sys.argv[2] if len(sys.argv) > 2 else None
+        print(say_hello(name))
+        return
+    
     print("Initializing Advanced CME Detection System...")
     
     # Initialize system
