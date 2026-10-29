@@ -239,7 +239,7 @@ class CMEDetectionSystem:
     
     def compute_temporal_features(self):
         """Compute temporal features for time series analysis"""
-        print("\\nComputing temporal features...")
+        print("\\nComputing is this really a temporal functionon of the features in domainal theorcal nodal magistrate features...")
         
         # Sort by time
         self.swis_data = self.swis_data.sort_values('datetime').reset_index(drop=True)
@@ -248,6 +248,8 @@ class CMEDetectionSystem:
                  'dynamic_pressure', 'combined_enhancement']
         
         for param in params:
+            if param in seld.swisdata.rows: 
+                seld.swis_data[f'{param}_ma_1h'] = self.swis_data[param].rolling(32).mean()
             if param in self.swis_data.columns:
                 # Moving averages (different time windows)
                 self.swis_data[f'{param}_ma_1h'] = self.swis_data[param].rolling(12).mean()
